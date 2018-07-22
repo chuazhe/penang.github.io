@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Penang My Hometown</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg clean-navbar" id="navbar">
+        <div class="container"><a class="navbar-brand logo"><img src="assets/img/2000px-Flag_of_Penang_(Malaysia).svg.png" class="d-inline-block" width="80px" height="40px">&nbsp;Penang My Hometown<br></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <main class="page landing-page">
+        <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/penang-2415478_1920.jpg&quot;);color:rgba(95,159,198,0.85);">
+            <div class="text">
+                <h1 class="swing animated" id="Penang">Penang</h1>
+            </div>
+        </section>
+        <section class="clean-block clean-info dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Info</h2>
+                    <p>Penang is a Malaysian state located on the northwest coast of Peninsular Malaysia, by the Malacca Strait.<br></p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6"><img class="img-thumbnail" src="assets/img/penang_second_bridge.jpg"></div>
+                    <div class="col-md-6">
+                        <h2>Geography<br></h2>
+                        <div class="getting-started-info">
+                            <p data-aos="fade-up" data-aos-once="true">It has two parts: Penang Island, where the capital city, George Town, is located, and Seberang Perai (formerly Province Wellesley) on the Malay Peninsula. The second smallest Malaysian state by land mass, Penang is bordered
+                                by Kedah to the north and the east, and Perak to the south.<br></p>
+                        </div><button class="btn btn-outline-primary btn-lg" type="button" data-aos="fade-up" data-aos-once="true" id="discoverBtn">Discover the Beauty of Penang<br></button></div>
+                </div>
+            </div>
+        </section>
+    </main><script>
+ document.getElementById("discoverBtn").onclick = function () {
+        window.open('gallery.html');
+
+    };
+    
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+
+
+<footer id="footer">
+    
+    <div style= "background: black; text-align: center; margin: 0px; padding:10px" >
+        <p id="footerWord" style= "color:grey; font-family: raleway">Keep learning and levelling up all the time
+        <br>Handmade by Chua Wei Zhe</p>
+    </div>
+</footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
